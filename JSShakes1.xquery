@@ -1,0 +1,10 @@
+declare default element namespace "http://www.tei-c.org/ns/1.0";
+(: collection('data/')//TEI//collection//titleStmt/title :)
+(:collection('data/')//TEI//collection//titleStmt/title :)
+(: collection('data/')//TEI//collection//titleStmt/title/text() :)
+(: string-join(collection('data/')//TEI//collection//titleStmt/title/text(), '; ') :)
+(: string-join(collection('data/')//TEI//collection//titleStmt/title/text(), '&#xa;') :)
+(: //TEI[.//speaker[contains(text(), 'Falstaff')]]//title/text() :)
+(: //TEI[.//speaker[contains(text(), 'Falstaff')]]//titleStmt/title/text() :)
+(: //sp[speaker[contains(text(), 'Falstaff')]] :)
+count(//sp[speaker[contains(text(), 'Falstaff')]])
